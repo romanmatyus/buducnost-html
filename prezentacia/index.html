@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Budúcnosť HTML</title>
+
+		<meta name="author" content="Bc. Roman Mátyus <romanmatyus@gmail.com>">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.custom.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Budúcnosť HTML</h1>
+					<h3>Informačné systémy</h3>
+					<p>
+						<small><a href="mailto:romanmatyus@gmail.com">Bc. Roman Mátyus</a> / <a href="http://twitter.com/RomanMatyus">@RomanMatyus</a> / <a href="https://github.com/romanmatyus/">github.com/romanmatyus</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>História</h2>
+					<p>
+						<ul>
+							<li>1992 prvé tagy</li>
+							<li>...</li>
+							<li>W3C, WHATWG</li>
+							<li>...</li>
+							<li>2013 HTML5</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Bezpečnosť</h2>
+					<p>
+						<ul>
+							<li>html5sec.org</li>
+							<li>odcudzenie dát/zaťaženie systému</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Sandbox iframe</h2>
+					<p>
+						<ul>
+							<li>Cudzie applety</li>
+							<li>Riziká</li>
+							<li>Nové možnosti zabezpečenia</li>
+						</ul>
+						<pre><code>&lt;iframe sandbox allow-forms allow-popups&gt;&lt;/iframe&gt;</code></pre>
+					</p>
+				</section>
+				<section>
+					<h2>Nové formulárové prvky</h2>
+					<p>
+						<ul>
+							<li>search</li>
+							<li>email</li>
+							<li>url</li>
+							<li>tel</li>
+							<li>number</li>
+							<li>range</li>
+							<li>date</li>
+							<li>month</li>
+							<li>week</li>
+							<li>time</li>
+							<li>datetime</li>
+							<li>datetime-local</li>
+							<li>color</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Atribúty formulárov</h2>
+					<p>
+						<ul>
+							<li>placeholder</li>
+							<li>autofocus</li>
+							<li>autocomplete</li>
+							<li>required</li>
+							<li>pattern</li>
+							<li>list</li>
+							<li>multiple</li>
+							<li>...</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Geolocation API</h2>
+					<p>
+						<ul>
+							<li>Natívny prístup ku koordinátom</li>
+							<li>Aktuálna poloha a n.m.</li>
+							<li>Sledovanie polohy</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>WebStorage</h2>
+					<em>- boj s Cookies</em>
+					<p>
+						Key-values databáza - asociatívne pole
+						<ul>
+							<li>+ neprenášajú sa na server</li>
+							<li>+ bezpečnosť</li>
+							<li>+ veľkosť</li>
+							<li>+ nejednotnosť priestoru</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>WebWorkers</h2>
+					<em>já mám na to lidi</em>
+					<p>
+						<ul>
+							<li>delegovanie na vlákna</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>WebSockets</h2>
+					<p>
+						<ul>
+							<li>Trvalé prepojenie klient<->server</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h2>Multimédiá</h2>
+						<p>
+							<em>... v 1992 na to nemysleli</em>
+						</p>
+					</section>
+					<section>
+						<h2>Video & audio</h2>
+						<em>vojna kodekov</em>
+						<p>
+							<ul>
+								<li>MPEG-4/H.264</li>
+								<li>WebM/VP8</li>
+								<li>Ogg/Theora</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>Kamera & mikrofón</h2>
+						<p>
+							<ul>
+								<li>Media Capture and Streams</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>Titulky - WebVTT</h2>
+						<p>
+							<ul>
+								<li>vychádza zo srt</li>
+								<li>+ sémantika</li>
+								<li>+ štýlovanie</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+				<section>
+					<h2>Canvas & WebGL</h2>
+					</p>
+						<ul>
+							<li>rastrové plátno</li>
+							<li>OpenGL v prehliadači</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<section>
+						<h2>Desktopové aplikácie v HTML5</h2>
+						<p>
+							<ul>
+								<li>Sprístupnienie potrebných API</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>Windows 8</h2>
+						<p>
+							<ul>
+								<li>Windows Runtime</li>
+								<li>Windows Store</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>Ubuntu</h2>
+						<p>
+							<em>Unity</em>
+							<ul>
+								<li>notifikácie</li>
+								<li>media player</li>
+								<li>applet správ</li>
+								<li>...</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h2>FirefoxOS</h2>
+						<p>
+							<em>Aplikácie iba v HTML5</em>
+							<ul>
+								<li>Vibration API</li>
+								<li>Screen Orientation</li>
+								<li>Geolocation API</li>
+								<li>Mouse Lock API</li>
+								<li>Network Information API</li>
+								<li>Battery Status API</li>
+								<li>Alarm API</li>
+								<li>Push Notifications API</li>
+								<li>WebFM API</li>
+								<li>WebPayment</li>
+								<li>IndexedDB</li>
+								<li>Ambient light sensor</li>
+								<li>Notification</li>
+								<li>FMRadio</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+				<section>
+					<h1>To je všetko?</h1>
+					<p>
+						<ul>
+							<li>CSS3</li>
+							<li>Multitouch</li>
+							<li>WebRTC</li>
+							<li>Drag&Drop</li>
+							<li>FileAPI</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h1>Ďakujem za pozornosť</h1>
+					<p>
+						<a href="https://github.com/romanmatyus/buducnost-html/">github.com/romanmatyus/buducnost-html</a>
+					</p>
+					<p>
+						<small><a href="mailto:romanmatyus@gmail.com">Bc. Roman Mátyus</a> / <a href="http://twitter.com/RomanMatyus">@RomanMatyus</a> / <a href="https://github.com/romanmatyus/">github.com/romanmatyus</a></small>
+					</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
